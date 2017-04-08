@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" href="electric_carbon.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="car.js"></script>
+	<script type="text/javascript" src="power.js"></script>
+	<script type="text/javascript" src="controller.js"></script>
+	<title>Electric Car Local Energy Mix</title>
+</head>
+<body>
+	<section id="header" class="static">
+		<h1>Electric Car Local Energy Mix</h1>
+		<h2>Is having an electric car in your region environmentally friendly?</h2>
+	</section>
+	<section id="inputsection">
+		<div id="carinputbox" class="inputbox">
+			<span id="carinner">
+				<h3>Enter an electric car</h3>			
+				<div>
+					<input type="text" id="inputmake" name="make" placeholder="make" value="">
+				</div>
+				<div>
+					<input type="text" id="inputmodel" name="model" placeholder="model" value="">
+				</div>
+				<div>
+					<input type="text" id="inputyear" name="year" placeholder="year" value="">
+				</div>
+				<div>
+					<input type="text" id="inputmiles" name="miles" placeholder="distance (miles)" value="">
+				</div>
+				<div id="entercarbox">
+					<button type="button" name="providerbutton" onclick="carcontroller.getCarInfo()"></button>
+				</div>
+			</span>
+		</div>
+		<div id="providerinputbox" class="inputbox" visibility="hidden">
+			<span id="providerinner">
+				<h3>Enter your location to find its balancing authority (general power provider)</h3>
+				<div>
+					<input type="text" id="location" name="location" placeholder="location" value="">
+				</div>
+				<div id="enterproviderbox">
+					<button type="button" id="provbutton" name="providerbutton""></button>
+				</div>
+			</span>
+		</div>
+	</section>
+        <footer id="footer" class="static">
+		<img src="https://open-api.edmunds.com/api/openapi/v1/logo?size=300&format=horizontal&retina=false&color=gray&api_key=538cs4nrsavz7afz94ru3fm5" alt="Edmunds authorization img" width="250px">
+		<h3>Created by James Miller and Mason Donnohue</h3>
+        </footer>
+</body>
+
+</html>

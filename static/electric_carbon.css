@@ -1,0 +1,208 @@
+html {
+	padding: 0px;
+	margin: 0px;
+	width:100%;
+    height: 100%;
+	box-shadow: inset 0 0 400px black;
+	background: url("https://cdn.allwallpaper.in/wallpapers/1366x768/815/country-road-on-a-beautiful-spring-day-1366x768-wallpaper.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	transition: .6s;
+
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	
+	text-align: center;
+}
+
+.static {
+	border: 15px solid transparent;
+    	margin: 50px;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	padding: 10px;
+	-webkit-border-image: url("img/border.png") 13 stretch; /* Safari 3.1-5 */
+    -o-border-image: url("img/border.png") 13 stretch; /* Opera 11-12.1 */
+    border-image: url("img/border.png") 13 stretch;
+	background: rgb(242, 239, 232);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), inset 0 6px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	font-family: Century Gothic, sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+h2 {
+	font-family: Century Gothic,Verdana,Geneva,sans-serif;
+	font-size: 18px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 15.4px;
+}
+
+h3 {
+	font-family: Century Gothic,Verdana,Geneva,sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 305;
+	line-height: 15.4px;
+}
+
+input {
+	margin-bottom: 8px;
+	width: 150px;
+	text-align: center;
+}
+
+button {
+	font-family: Verdana,Geneva,sans-serif;
+	width: 40px;
+	height: 40px;
+	border: 7px solid transparent;
+	-webkit-border-image: url("img/border.png") 13 stretch; /* Safari 3.1-5 */
+    -o-border-image: url("img/border.png") 13 stretch; /* Opera 11-12.1 */
+    border-image: url("img/border.png") 13 stretch;
+	background-image: url("https://image.flaticon.com/icons/svg/60/60758.svg");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: .2s
+}
+
+button:hover {
+	background-size: 14px;
+	background-position: left;
+	background-repeat: repeat-x;
+	
+	transition: .2s;
+}
+
+button:select {
+	background-size: 25px
+}
+
+.inputbox {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	line-height: 300px;
+  	text-align: center;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), inset 0 6px 8px 0 rgba(0, 0, 0, 0.3);
+
+	border: 15px solid transparent;
+    padding: 15px;
+	-webkit-border-image: url("img/border.png") 13 stretch; /* Safari 3.1-5 */
+    -o-border-image: url("img/border.png") 13 stretch; /* Opera 11-12.1 */
+    border-image: url("img/border.png") 13 stretch;
+
+	background: rgb(242, 239, 232);
+
+	-webkit-transition: -webkit-transform 1s ease-in-out;
+	transition: .4s;
+}
+
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+img {
+	image-rendering: pixelated;
+}
+
+#car {
+	display: inline-block;
+	position: relative;
+	width: 192px;
+	height: 60px;
+	background: url("img/car1_strip.png") left bottom;
+	animation: turnWheels .3s steps(2) 2;
+	transition: ease-in-out transform .2s;
+}
+
+#car:hover {
+	animation: turnWheels .3s steps(2) infinite;
+}
+
+@keyframes turnWheels {
+    100% { background-position: 440px bottom; }
+}
+
+.energysource {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	margin-right: 15px;
+}
+
+span {
+	margin-right: 30px;
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 310;
+	line-height: 15.4px;
+}
+
+#wind {
+	background: url("img/fuels.png") 144px bottom;
+	transition: .2s;
+}
+
+#coal {
+	background: url("img/fuels.png") left bottom;
+	transition: .2s;
+}
+
+#nuclear {
+	background: url("img/fuels.png") 192px bottom;
+	transition: .2s;
+}
+
+#natgas {
+	background: url("img/fuels.png") 96px bottom;
+	transition: .2s;
+}
+
+#other {
+	background: url("img/fuels.png") 48px bottom;
+	transition: .2s;
+}
+
+footer {
+	vertical-align: middle;
+	
+}
+
+footer img {
+	
+	vertical-align: middle;
+	box-shadow: 0 0 2px rgb(150, 150, 150);
+}
+
+footer h3 {
+	padding: 0px;
+	margin: 10px;
+	vertical-align: middle;
+}
+
+
